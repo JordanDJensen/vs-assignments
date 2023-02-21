@@ -1,5 +1,12 @@
 let head = document.getElementById("header");
-head.textContent = "JavaScript Made This!!";
+let n = document.createElement("span");
+let nameText = document.createTextNode("Jordan");
+n.appendChild(nameText);
+
+head.textContent = "JavaScript Made This!!" 
+document.getElementById("header").appendChild(n)
+
+n.classList.add("name");
 
 // let tag = document.createElement(span);
 // let text = document.createTextNode("Jordan Jensen");
