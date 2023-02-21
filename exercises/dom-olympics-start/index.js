@@ -8,7 +8,7 @@ head.textContent = "JavaScript Made This!!";
 // var element = document.getElementById("header");
 // document.body.insertBefore(tag, element);
 
-
+//Bronze 
 let leftText = document.querySelectorAll(".left");
 let rightText = document.querySelectorAll(".right");
 
@@ -18,15 +18,16 @@ leftText[1].textContent = "Nothing much man just about to go to the gym.";
 rightText[1].textContent = "I am about to hit the gym too. I will see you soon!";
 
 
+let clearBtn = document.getElementById("clear-button");
+clearBtn.addEventListener("click", function(){
+  let messages = document.querySelectorAll(".message");
+    for(let i = 0; i < messages.length; i++){
+      messages[i].remove();
+      
+    }
+});
 
 
-var rightMessage = document.getElementsByClassName("right");
-function clearAll(){
-    
-    rightMessage.remove();
-   
-
-}
 // Silver
 var dropDown = document.getElementById("theme-drop-down");
 dropDown.onchange = function(){
