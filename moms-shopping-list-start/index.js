@@ -30,10 +30,8 @@ form.addEventListener("submit", function(event){
     listItem.appendChild(li);
 
     btnRemove.addEventListener("click", () =>{
-        var removeItem = document.getElementsByClassName("removeItem");
-        for(let i =0; i < removeItem.length; i++){
-           li.style.display = "none";
-        }
+
+        listItem.removeChild(li);
     });
 
     
