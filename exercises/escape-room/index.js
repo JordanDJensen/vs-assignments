@@ -1,3 +1,4 @@
+const { Console } = require("console");
 const readline = require("readline-sync");
 let user = readline.question("Hello user what is your name?"); 
 
@@ -7,7 +8,7 @@ console.log("\nWelcome " + user + " to the Escape Room! To get you started I wil
 "to be the most challenging one yet, and you were eager to try it out. As you entered the room, the door slammed shut\n\n" 
 + "You must find a way out of the escape room.\n" + "You have 3 tries to escape the room or you lose.");
 
-let escapeCount = 2; 
+let escapeCount = 3; 
 let foundKey = false;
 
 
@@ -17,6 +18,7 @@ while( escapeCount > 0){
 
    switch(choice[choiceIndex]){
     case "1 - Find the key.":
+        escapeCount -= 1;
         console.log("\nYou have found the key.");
        foundKey = true; 
         break;
@@ -25,19 +27,19 @@ while( escapeCount > 0){
         if(foundKey === true){
             escapeCount = 0;
             console.log("\nYou have open the door with the key and have escaped the Room!");
-            
+             
         } else {
-            escapeCount -= 1; 
+            escapeCount -= 1
             console.log("Door is locked");
-        
-            
-        }
-
-        if(escapeCount == -1){
-            console.log("\nYou have used all your tries. You Lose!")
         }
         break;
     case "3 - Put had through hole":
+        console.log("Nothing there.");
+        escapeCount -=1;
         break;
+   }
+
+   if(escapeCount == 0 && foundKey == false ){
+    console.log(" You lose!");
    }
 }
