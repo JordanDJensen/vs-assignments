@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 600px 80px;
+
+}
+
+.header{
+    grid-column: 1/9;
+    background-image: url(/photos/drone.webp);
+    text-align: center;
+    background-size: contain;
+    padding-top: 250px;
+    
+
+}
+
+nav{
+    grid-column: 1/9;
+    grid-row: 2/4;
+    background-color: silver;
+    
+
+}
+
+nav > a{
+    font-size: 42px;   
+    margin: 25px 25px 25px 60px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.about{
+    grid-column: 2/8;
+    font-size: 35px;
+}
+
