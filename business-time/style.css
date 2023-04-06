@@ -3,10 +3,14 @@ body {
   margin: 0px;
 }
 
+h1{
+    font-size: 52px;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 600px 80px;
+    grid-template-rows: 600px 100px 1400px;
 
 }
 
@@ -14,29 +18,52 @@ body {
     grid-column: 1/9;
     background-image: url(/photos/drone.webp);
     text-align: center;
-    background-size: contain;
-    padding-top: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
     
 
 }
 
 nav{
-    grid-column: 1/9;
-    grid-row: 2/4;
-    background-color: silver;
-    
-
+    grid-column: 2/8;
+    grid-row: 2/3;
+    font-size: 42px;
+    margin-top: 50px;
+    background-color: gray;
+  
 }
 
 nav > a{
-    font-size: 42px;   
-    margin: 25px 25px 25px 60px;
-    text-decoration: none;
-    display: inline-block;
+   margin: 0px 0px 0px 24px;
+   text-decoration: none;
+
 }
+
+
 
 .about{
     grid-column: 2/8;
     font-size: 35px;
 }
+
+.price{
+    grid-column: 2/8;
+    text-align: center;
+}
+
+.price > article{
+   display: inline-block;
+   font-size: 25px;
+   margin-left: 55px;
+   margin-right: 55px;
+}
+
+.contact{
+    grid-column: 2/8;
+}
+
+footer{
+    grid-column: 1/-1;
+}
+
 
