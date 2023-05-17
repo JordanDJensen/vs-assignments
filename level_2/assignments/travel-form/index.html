@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <form name="travel-form">
+            <label>First Name:</label>
+            <input type="text" name="fName"/><br><br>
+            <label>Last Name:</label>
+            <input type="text" name="lName" /><br><br>
+            <label>Age:</label>
+            <input type="number" name="age" /><br><br>
+            <label>Male</label>
+            <input type="radio" name="gender" value="male"/>
+            <label>Female</label>
+
+            <input type="radio" name="gender" value="female"/><br><br>
+            <label>Travel locations?</label>
+            <select name="travel">
+                <option value="Las Vegas">Las Vegas, Nevada</option>
+                <option value="Los Angeles">Los Angeles, California</option>
+                <option value="Phoniex">Phoniex, Arizona</option>
+            </select><br><br>
+            <label>Dietary restrictions:</label><br><br>
+            <input type="checkbox" name="dietary"value="Vegetarian"/>
+            <label>Vegetarian</label><br><br>
+
+            <input type="checkbox" name="dietary" value="Gluten Free"/>
+            <label>Gluten Free</label><br><br>
+
+            <input type="checkbox" name="dietary" value="Lactose Free"/>
+            <label>Lactose Free</label><br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    <script src="app.js"></script>
+    </body>
+</html>
