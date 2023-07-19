@@ -10,7 +10,7 @@ h1{
 .container{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 700px 100px 1400px;
+    grid-template-rows: 700px 100px 1000px;
 
 }
 
@@ -42,7 +42,7 @@ nav{
     background-color: #DE813F;
     justify-content: space-between;
     display: flex;
-   
+    padding-right: 25px;
   
 }
 
@@ -52,6 +52,9 @@ nav > a{
    padding-top: 10px;
 }
 
+a:visited{
+    color:white;
+}
 
 
 .about{
@@ -60,7 +63,7 @@ nav > a{
 }
 
 .price{
-    grid-column: 2/8;
+    grid-column: 1/8;
     text-align: center;
 }
 
@@ -69,6 +72,8 @@ nav > a{
    font-size: 25px;
    margin-left: 55px;
    margin-right: 55px;
+   border: 2px solid black;
+   width: 300px;
 }
 
 .contact{
@@ -82,7 +87,16 @@ footer{
 
 #me{
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     border: 5px solid black;
+}
+
+p{
+    text-indent: 75px;
+}
+
+img{
+    width: 250px;
+    height: 250px
 }
