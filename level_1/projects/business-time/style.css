@@ -76,9 +76,6 @@ a:visited{
    width: 300px;
 }
 
-.contact{
-    grid-column: 2/8;
-}
 
 footer{
     grid-column: 1/-1;
@@ -111,4 +108,12 @@ img{
     border: 2px solid black;
     padding: 10px;
     
+}
+
+.contact{
+    grid-column: 2/8;
+}
+
+.contact{
+    margin-top: 250px;
 }
