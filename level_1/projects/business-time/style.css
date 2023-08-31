@@ -117,3 +117,33 @@ img{
 .contact{
     margin-top: 250px;
 }
+
+.contact-me{
+    background-color: lightgray;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article > i {
+    font-size: 32px;
+    
+}
+
+.fa-envelope{
+    margin-left: 75px;
+}
+
+.fa-map-pin{
+    margin-left: 25px;
+}
+
+.fa-linkedin{
+    margin-bottom: 45px;
+}
+
+input, textarea  {
+    display: block;
+}
