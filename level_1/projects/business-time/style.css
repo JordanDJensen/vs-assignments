@@ -98,8 +98,8 @@ footer{
 } */
 
 img{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
 }
 
 .price-container{
@@ -120,7 +120,7 @@ img{
 }
 
 .contact{
-    margin-top: 250px;
+    margin-top: 75px;
 }
 
 .contact-me{
